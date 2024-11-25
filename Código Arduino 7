@@ -1,0 +1,20 @@
+1  for ( int i = 0; i < tamanhoVetor ; i++) {
+2    if (sensorReadings[i] == 150) {
+3      break;
+4    }
+5  }
+
+
+
+// Explicação : 
+for:  Esse loop percorre os elementos de um vetor (ou array) chamado sensorReadings[].
+int i = 0: A variável i é inicializada com 0. Isso significa que o loop começa pela primeira posição do vetor (índice 0).
+i < tamanhoVetor: O loop continua enquanto o valor de i for menor que o valor de tamanhoVetor, que indica o tamanho total do vetor. 
+Ou seja, o loop percorre todos os índices do vetor de 0 até tamanhoVetor - 1.
+i++: Após cada iteração, i é incrementado em 1, movendo para o próximo índice do vetor.
+if: Verifica se o valor do vetor sensorReadings[i] na posição i é igual a 150.
+sensorReadings[i]: Refere-se ao valor armazenado no vetor sensorReadings na posição i.
+Se a condição for verdadeira (ou seja, o valor do sensor na posição i for igual a 150), o código entra no bloco de instruções dentro do if.
+break: Se a condição do if for satisfeita, o comando break é executado.
+O break interrompe imediatamente o loop, fazendo com que ele termine mesmo que a condição de término do for (i < tamanhoVetor) ainda não tenha sido atingida. 
+Ou seja, o loop é "quebrado" e não continua a percorrer os próximos elementos após encontrar o valor 150.
